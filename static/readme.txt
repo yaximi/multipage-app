@@ -1,0 +1,5 @@
+static内存放的文件不会被webpack编译，
+直接通过copy-webpack-plugin拷贝到dist中，
+因此可以存放一些不需要编译处理的静态资源文件，
+但这些文件同样不会被html-webpack-plugin自动插入模板html,
+所以需要手动引入模板html中。
